@@ -1,8 +1,6 @@
 import React from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
-// import Button from 'react-bootstrap/Button';
-
 
 const cart = (props) => {
     console.log(props.addCourse);
@@ -33,7 +31,6 @@ const cart = (props) => {
         <div>
             <CardDeck className="mt-5">
             <Card>
-            {/* <Card.Header><h2>Your Courses</h2></Card.Header> */}
             <Card.Body>  
                 <Card.Text>
                  <p><big>Total Courses : {addCourse.length}</big></p>

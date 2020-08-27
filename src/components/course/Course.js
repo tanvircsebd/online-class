@@ -7,12 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Course = (props) => {
-    // console.log(props.Courses);
     const courses = props.Courses;
     const handleCourse = props.handleCourse;
     
     let Course = courses.map(course => {
-        // console.log(course.name)
         let {name,instructor,price,image} = course;
    
     return (
@@ -34,22 +32,8 @@ const Course = (props) => {
     )
   })
 
-    // var queries = [{
-    //     columns: 2,
-    //     query: 'min-width: 500px'
-    //   }, {
-    //     columns: 3,
-    //     query: 'min-width: 1000px'
-    //   }];
-    // const columnDisplay = {
-    //   display:'flex',
-    //   height: 'px',
-    //   width: '150px'
-    // }
-
     return (
         <div>
-           {/* <Columns queries={queries}>{Course}</Columns> */}
            <Columns>{Course}</Columns>
         </div>
     );

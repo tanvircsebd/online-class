@@ -5,7 +5,6 @@ import fakeData from './components/FakeData/fakeCourses';
 import Course from './components/course/Course';
 import Cart from './components/cart/Cart';
 
-// console.log(addCourse);
 function App() {
   const [courses,setCourses] = useState([]);
   const [addCourse,setAddCourse] = useState([]);
@@ -26,10 +25,8 @@ function App() {
       <div className="col-md-12 m-auto">
       <div className="row">
           <div className="col-md-9 main-course">
-            {/* <h2 className="text-center m-3 bg-primary p-3 rounded">All Courses</h2> */}
             <Course Courses={courses} handleCourse={handleCourse}></Course>
           </div>
-          {/* <div className="col-md-3 added-course"> */}
           <div className="col-md-3">
           <h2 className="text-center m-3 bg-secondary p-3 rounded">Course Enrolled</h2>
             <Cart addCourse={addCourse}></Cart>

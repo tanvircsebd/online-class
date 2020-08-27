@@ -1,5 +1,4 @@
 import React from 'react';
-import './header.css';
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
